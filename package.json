@@ -9,11 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.26.1",
+    "framer-motion": "^6.3.0",
+    "millify": "^4.0.0",
     "next": "12.1.5",
+    "nprogress": "^0.2.0",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-horizontal-scrolling-menu": "^2.7.1",
+    "react-icons": "^4.3.1",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5"
   }

@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:  Ubuntu, -apple-system,
+     sans-serif;
 }
 
 a {
@@ -11,6 +11,22 @@ a {
   text-decoration: none;
 }
 
-* {
+*, *::after,
+*::before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+
+:root {
+  --main-color: #6666ff;
+  --sec-color: #ffcc00;
+}
+
+::selection{
+  background-color: var(--sec-color);
+  color: var(--main-color);
+}
+
+
