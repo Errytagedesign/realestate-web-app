@@ -1,7 +1,6 @@
 import React from "react";
-import { Wrapper, Contents, Button } from "./Banner.styles";
-import Link from " next/link";
-import Image from "next/image";
+import { Wrapper, Content, Button, BannerImg } from "./Banner.styles";
+import Link from "next/link";
 
 function Banners({
   purpose,
@@ -11,20 +10,21 @@ function Banners({
   desc1,
   desc2,
   LinkName,
-  butttonText,
+  buttonText,
 }) {
   return (
     <Wrapper>
-      <Image src={ImageUrl} alt="banners image" width={500} height={300} />
-      <Contents>
-        <h2>{purpose}</h2>
+      <BannerImg src={ImageUrl} alt="banners image" />
+      <Content>
+        <h4>{purpose}</h4>
         <h2>{title1}</h2>
-        <h2>{title2}</h2>
+
         <p>{desc1}</p>
+
         <Button>
-          <Link href={LinkName}> {butttonText} </Link>
+          <Link href={LinkName}>{buttonText}</Link>
         </Button>
-      </Contents>
+      </Content>
     </Wrapper>
   );
 }
