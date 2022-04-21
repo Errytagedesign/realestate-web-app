@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family:  Ubuntu, -apple-system,
      sans-serif;
+     
 }
 
 a {
@@ -20,8 +21,21 @@ a {
 
 
 :root {
-  --main-color: #6666ff;
+  --main-color: #0e0eb6;
   --sec-color: #ffcc00;
+  --grad: linear-gradient(to right, #EF7F36, #EB008B );
+  
+  --maxWidth: 1200px;
+  --white: #fff;
+  --lightGrey: #eee;
+  --medGrey: #353535;
+  --darkGrey: #1c1c1c;
+  --fontSuperBig: 2.5rem;
+  --fontBig: 1.5rem;
+  --fontMed: 1.2rem;
+  --fontSmall: 1rem;
+
+
 }
 
 ::selection{
@@ -30,3 +44,48 @@ a {
 }
 
 
+h1, h2, h3, h4, h5, h6, p, a{
+  margin: 0;
+  padding: .2em;
+  font-family: Ubuntu;
+}
+
+
+h1{
+  font-size: 2rem;
+  font-weight: 600;
+
+}
+h3{
+  font-size: 1.1rem;
+  font-weight: 600;
+  
+}
+p{
+  font-size: 1rem;
+ 
+}
+
+.btn {
+  
+  width: 100%;
+  background-image:  var(--grad);
+  padding: 1em;
+  border: none;
+  border-radius: 10px;  
+  margin: .5em;
+  color: var(--white);
+
+}
+
+
+.btn:hover {
+  
+  color: var(--main-color);
+  box-shadow: 1px 5px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn a {
+  font-weight: 600;
+  font-size: var(--fontMed);
+}

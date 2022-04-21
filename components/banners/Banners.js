@@ -21,9 +21,9 @@ function Banners({
 
         <p>{desc1}</p>
 
-        <Button>
+        <button className="btn">
           <Link href={LinkName}>{buttonText}</Link>
-        </Button>
+        </button>
       </Content>
     </Wrapper>
   );

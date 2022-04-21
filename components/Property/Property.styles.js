@@ -5,12 +5,8 @@ export const Wrapper = styled.div`
   margin: 1.5em auto;
   width: 90%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  justify-content: space- between;
 `;
 
 export const Content = styled.div`
@@ -19,7 +15,6 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 2em;
   text-align: center;
-  background: var(--main-color);
 
   align-items: center;
   justify-content: space-between;
@@ -36,6 +31,7 @@ export const Content = styled.div`
 
   p {
     font-size: var(--fontMed);
+    color: var(--main-color);
   }
 
   button {
@@ -48,6 +44,26 @@ export const Content = styled.div`
     font-size: 1.5rem;
   }
 
+  .CardTitle,
+  .CardIcons {
+    width: 100%;
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+  }
+
+  .agentImg {
+    border-radius: 50%;
+  }
+
+  .HomeIcons {
+    color: var(--sec-color);
+  }
+
+  .Verified {
+    color: green;
+  }
   /* @media screen and (min-width: 768px) {
     h2 {
       font-size: 4rem;
@@ -57,24 +73,7 @@ export const Content = styled.div`
   } */
 `;
 
-export const Button = styled.button`
-  width: 100%;
-  background-color: var(--main-color);
-  padding: 1em;
-  border: none;
-  border-radius: 10px;
-
-  a {
-    color: #fff;
-    font-weight: 700;
-  }
-
-  :hover {
-    background-color: var(--sec-color);
-  }
-`;
-
-export const BannerImg = styled.img`
+export const CardImg = styled.img`
   width: 100%;
   height: 500px;
 
