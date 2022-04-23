@@ -1,4 +1,13 @@
 .forSale{
   display: grid;
-  grid-template-columns: repeat( 205px, 1f);
+  grid-template-columns: repeat(auto-fill,  minmax(400px, 1fr));
+
+  grid-gap: 2px;
+  padding: .2em;
+  margin: 0;
+}
+
+.forSale:hover{
+  box-shadow: 1px 5px 8px 1px rgba(0, 0, 0, 0.3);
+
 }

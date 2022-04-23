@@ -7,13 +7,19 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space- between;
+
+  :hover {
+    box-shadow: 4px 15px 18px 1px rgba(0, 0, 0, 0.3);
+    border: solid var(--medGrey) 2px;
+    border-radius: 5px;
+  }
 `;
 
 export const Content = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 0.5em;
   text-align: center;
 
   align-items: center;

@@ -36,8 +36,8 @@ function Property({
               className="cardImg"
               src={coverPhoto ? coverPhoto.url : defaultPhoto}
               alt="House Images"
-              width={400}
-              height={200}
+              width={600}
+              height={300}
             />
 
             <section className="CardTitle">

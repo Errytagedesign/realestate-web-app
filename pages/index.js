@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
+import style from "../styles/Home.module.css";
+
 // Components
 import Banners from "../components/banners/Banners";
 import Property from "../components/Property/Property";
@@ -21,7 +23,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
           LinkName=""
           ImageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
         />
-        <article className="forSale">
+        <article className={style.forSale}>
           {propertiesForSale.map((property) => (
             <Property property={property} key={property.id} />
           ))}
