@@ -1,19 +1,43 @@
 import React from "react";
+
+// Style Components
 import { Wrapper, Content, CardImg } from "./Property.styles";
+
+// General Imports
 import Link from "next/link";
+import Image from "next/image";
+import defaultPhoto from "../../assets/image/house.jpg";
+
+// Icons
 import { BsFillPatchCheckFill, BsFillGridFill } from "react-icons/bs";
 import { FaBed } from "react-icons/fa";
 import { MdBathroom } from "react-icons/md";
-import Image from "next/image";
-function Property({ LinKName }) {
+
+function Property({
+  property: {
+    coverPhoto,
+    price,
+    rentFrequency,
+    title,
+    baths,
+    rooms,
+    area,
+    agency,
+    isVerified,
+    externalID,
+  },
+}) {
   return (
     <Wrapper>
-      <Link href="#">
+      <Link href={`/property/${externalID}`} passHref>
         <a>
           <Content>
-            <CardImg
-              src="https://realtor.vercel.app/_next/image?url=https%3A%2F%2Fbayut-production.s3.eu-central-1.amazonaws.com%2Fimage%2F110499193%2F56b768304c344e3cb71d9b968dfb0323&w=640&q=75"
+            <Image
+              className="cardImg"
+              src={coverPhoto ? coverPhoto.url : defaultPhoto}
               alt="House Images"
+              width={400}
+              height={200}
             />
 
             <section className="CardTitle">
@@ -34,7 +58,7 @@ function Property({ LinKName }) {
               <p>2</p> <FaBed className="HomeIcons" /> <small>|</small>
               <p>2</p> <BsFillGridFill className="HomeIcons" /> <small>|</small>
             </section>
-            <p>lllllllllllllllllll</p>
+            <p>{title}</p>
           </Content>
         </a>
       </Link>

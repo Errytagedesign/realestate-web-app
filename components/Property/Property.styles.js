@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import Image from "next/image";
+import Image from "next/image";
 
 export const Wrapper = styled.div`
   margin: 1.5em auto;
@@ -64,6 +64,12 @@ export const Content = styled.div`
   .Verified {
     color: green;
   }
+
+  .cardImg {
+    width: 100%;
+    height: 500px;
+  }
+
   /* @media screen and (min-width: 768px) {
     h2 {
       font-size: 4rem;
@@ -73,7 +79,7 @@ export const Content = styled.div`
   } */
 `;
 
-export const CardImg = styled.img`
+export const CardImg = styled(Image)`
   width: 100%;
   height: 500px;
 

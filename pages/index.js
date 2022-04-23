@@ -21,8 +21,10 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
           LinkName=""
           ImageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
         />
-        <article>
-          <Property />
+        <article className="forSale">
+          {propertiesForSale.map((property) => (
+            <Property property={property} key={property.id} />
+          ))}
         </article>
       </section>
       <section>
