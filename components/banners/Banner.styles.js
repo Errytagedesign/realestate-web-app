@@ -3,13 +3,15 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 1.5em auto;
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 4em;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    width: 100%;
   }
 `;
 

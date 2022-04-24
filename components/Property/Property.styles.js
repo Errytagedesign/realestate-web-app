@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export const Wrapper = styled.div`
   margin: 1.5em auto;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space- between;
+  justify-content: space-between;
 
   :hover {
     box-shadow: 4px 15px 18px 1px rgba(0, 0, 0, 0.3);
@@ -25,14 +25,15 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  h2,
+  /* h2,
   h4,
   p {
     color: var(--white);
-  }
+  } */
 
   h2 {
-    font-size: var(--fontSuperBig);
+    font-size: var(--fontBig);
+    color: var(--main-color);
   }
 
   p {
@@ -63,8 +64,9 @@ export const Content = styled.div`
     border-radius: 50%;
   }
 
-  .HomeIcons {
-    color: var(--sec-color);
+  .HomeIcons,
+  .title {
+    color: var(--medGrey);
   }
 
   .Verified {

@@ -40,6 +40,12 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
           LinkName=""
           ImageUrl="https://psgroup.in/blog/wp-content/uploads/2021/02/photo-1564013799919-ab600027ffc6.jpeg"
         />
+
+        <article className={style.forSale}>
+          {propertiesForRent.map((property) => (
+            <Property property={property} key={property.id} />
+          ))}
+        </article>
       </section>
     </main>
   );
