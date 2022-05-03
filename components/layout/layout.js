@@ -1,16 +1,17 @@
 import React from "react";
 import Head from "next/head";
 
-// Styles
-import { Wrapper } from "./layout.styles";
+import Navbar from "../Navbar/navbar";
 
 function layout({ children }) {
   return (
     <div>
       <Head> Realt Estate web-app created with reactjs and nextjs</Head>
 
-      <Wrapper></Wrapper>
-      <header>navbar</header>
+      <header>
+        {" "}
+        <Navbar />{" "}
+      </header>
 
       <main>{children}</main>
 
