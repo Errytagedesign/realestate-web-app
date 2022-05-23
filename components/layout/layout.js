@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import Navbar from "../Navbar/navbar";
 
-function layout({ children }) {
+function Layout({ children }) {
   return (
     <div>
       <Head> Realt Estate web-app created with reactjs and nextjs</Head>
@@ -19,4 +19,4 @@ function layout({ children }) {
   );
 }
 
-export default layout;
+export default Layout;
