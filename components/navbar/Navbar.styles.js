@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  position: relative;
   width: 100%;
   display: flex;
   background: red;
@@ -16,7 +17,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  position: relative;
   width: 85%;
   display: flex;
   flex-direction: row;
@@ -31,6 +31,16 @@ export const Content = styled.div`
 
   .menuIcon {
     color: #fff;
+    font-weight: 700;
+    font-size: var(--fontBig);
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menuIcon {
+      visibility: visible;
+    }
   }
 `;
 
@@ -45,16 +55,40 @@ export const NavBars = styled.div`
   .navItems {
     color: #fff;
     padding: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .closeMenu {
+    color: #fff;
+    font-weight: 700;
+    font-size: var(--fontBig);
+    cursor: pointer;
+    visibility: hidden;
   }
 
   @media screen and (max-width: 768px) {
-    width: 40%;
-    display: flex;
+    .closeMenu {
+      position: absolute;
+      left: 70%;
+      visibility: visible;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    width: 100%;
+    top: ${({ navbar }) => (navbar ? "0" : "-100%")};
+    /* top: -100%; */
+    left: 0;
+    /* right: 0; */
     flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    cursor: pointer;
     background: var(--main-color);
     padding: 1.5em;
+    transition: 350ms;
+    z-index: 200;
+  }
+
+  .navItems {
+    background: var(--gradient);
   }
 `;

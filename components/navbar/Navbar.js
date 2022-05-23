@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
-import { BsMenuButtonWide } from " react-icons/bs";
+import { BsMenuButtonWide, BsXLg } from "react-icons/bs";
 
 // Styles
 import { Wrapper, Content, NavBars } from "./Navbar.styles";
 
-function navbar() {
+function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+  const ShowNavbar = () => {
+    setNavbar(!navbar);
+    console.log("clicked");
+  };
+
   return (
     <Wrapper>
       <Content>
         <Link href="/" passHref>
           <h2>Realtor</h2>
         </Link>
-
-        <NavBars>
+        <NavBars navbar={navbar}>
           <Link href="/" passHref>
             <div className="navItems">Home</div>
           </Link>
@@ -27,14 +33,14 @@ function navbar() {
           <Link href="/search?purpose=for-rent" passHref>
             <div className="navItems">Rent property</div>
           </Link>
+          <BsXLg className="closeMenu " onClick={ShowNavbar} />
         </NavBars>
-
         <main>
-          <BsMenuButtonWide className="menuIcon" />
+          <BsMenuButtonWide className="menuIcon" onClick={ShowNavbar} />
         </main>
       </Content>
     </Wrapper>
   );
 }
 
-export default navbar;
+export default Navbar;

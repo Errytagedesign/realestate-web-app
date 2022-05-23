@@ -2,14 +2,25 @@
   width: 80%;
   /* max-width: var(--maxWidth); */
   display: grid;
-  grid-template-columns: repeat(auto-fill,  minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill,  minmax(300px, 1fr));
   grid-gap: 2px;
   padding: .2em;
   margin: 0 auto;
   place-items: center;
+  /* background: red; */
 }
 
 .forSale:hover{
   box-shadow: 1px 5px 8px 1px rgba(0, 0, 0, 0.3);
 
+}
+
+@media screen and (max-width: 768px) {
+
+  .forSale{
+    width: 100%;
+    overflow: hidden;
+   
+  }
+  
 }

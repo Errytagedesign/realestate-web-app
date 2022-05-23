@@ -9,8 +9,7 @@ function layout({ children }) {
       <Head> Realt Estate web-app created with reactjs and nextjs</Head>
 
       <header>
-        {" "}
-        <Navbar />{" "}
+        <Navbar />
       </header>
 
       <main>{children}</main>
