@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import Navbar from "../Navbar/navbar";
+import Navbar from "../navbar/Navbar";
 
 function Layout({ children }) {
   return (
