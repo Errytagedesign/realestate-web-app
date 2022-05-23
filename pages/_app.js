@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import NProgress from "nprogress";
-import Layout from "../components/Layout/layout";
+import Layout from "../components/Layout/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
