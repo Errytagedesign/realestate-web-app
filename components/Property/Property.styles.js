@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
   :hover {
     box-shadow: 4px 15px 18px 1px rgba(0, 0, 0, 0.3);
-    border: solid var(--medGrey) 2px;
+    border: solid var(--grad) 2px;
     border-radius: 5px;
   }
 `;

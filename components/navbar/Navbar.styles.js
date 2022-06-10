@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   position: relative;
   width: 100%;
   display: flex;
-  background: red;
+  background: var(--grad);
   align-items: center;
   justify-content: space-around;
 
@@ -27,6 +27,7 @@ export const Content = styled.div`
 
   h2 {
     cursor: pointer;
+    color: var(--main-color);
   }
 
   .menuIcon {

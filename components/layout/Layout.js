@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer/footer";
 
 function Layout({ children }) {
   return (
@@ -14,7 +15,10 @@ function Layout({ children }) {
 
       <main>{children}</main>
 
-      <footer>footer</footer>
+      <footer>
+        {" "}
+        <Footer />{" "}
+      </footer>
     </div>
   );
 }
