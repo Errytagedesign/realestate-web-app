@@ -28,6 +28,7 @@ export const Content = styled.div`
 
   section {
     display: flex;
+    flex-direction: row;
     padding: 1em;
     justify-content: space-between;
   }
@@ -35,5 +36,12 @@ export const Content = styled.div`
   small,
   a {
     color: var(--sec-color);
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    section {
+      flex-direction: column;
+    }
   }
 `;

@@ -14,16 +14,20 @@ function Banners({
 }) {
   return (
     <Wrapper>
-      <BannerImg src={ImageUrl} alt="banners image" />
       <Content>
-        <h4>{purpose}</h4>
-        <h2>{title1}</h2>
+        <section>
+          <BannerImg src={ImageUrl} alt="banners image" />
+        </section>
+        <main>
+          <h4>{purpose}</h4>
+          <h2>{title1}</h2>
 
-        <p>{desc1}</p>
+          <p>{desc1}</p>
 
-        <button className="btn">
-          <Link href={LinkName}>{buttonText}</Link>
-        </button>
+          <button className="btn">
+            <Link href={LinkName}>{buttonText}</Link>
+          </button>
+        </main>
       </Content>
     </Wrapper>
   );

@@ -46,18 +46,18 @@ export const Content = styled.div`
 `;
 
 export const NavBars = styled.div`
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-content: space-between;
-  cursor: pointer;
 
   .navItems {
     color: #fff;
     padding: 1em;
     text-transform: uppercase;
     font-weight: 600;
+    cursor: pointer;
   }
   .closeMenu {
     color: #fff;

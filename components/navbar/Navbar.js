@@ -22,16 +22,16 @@ function Navbar() {
         </Link>
         <NavBars navbar={navbar}>
           <Link href="/" passHref>
-            <div className="navItems">Home</div>
+            <h4 className="navItems">Home</h4>
           </Link>
           <Link href="/search" passHref>
-            <div className="navItems">Search</div>
+            <h4 className="navItems">Search</h4>
           </Link>
           <Link href="/search?purpose=for-sale" passHref>
-            <div className="navItems">Buy Property</div>
+            <h4 className="navItems">Buy Property</h4>
           </Link>
           <Link href="/search?purpose=for-rent" passHref>
-            <div className="navItems">Rent property</div>
+            <h4 className="navItems">Rent property</h4>
           </Link>
           <BsXLg className="closeMenu " onClick={ShowNavbar} />
         </NavBars>

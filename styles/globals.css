@@ -34,6 +34,7 @@ a {
   --fontBig: 1.5rem;
   --fontMed: 1.2rem;
   --fontSmall: 1rem;
+  --medShadow: 4px 15px 18px 1px rgba(0, 0, 0, 0.3);
 
 
 }

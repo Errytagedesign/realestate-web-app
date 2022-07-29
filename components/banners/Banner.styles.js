@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-around;
   margin-top: 4em;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -18,8 +19,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  padding: 2em;
+  flex-direction: row;
   text-align: center;
   background: var(--main-color);
 
@@ -50,19 +50,31 @@ export const Content = styled.div`
     font-size: 1.5rem;
   }
 
-  /* @media screen and (min-width: 768px) {
-    h2 {
-      font-size: 4rem;
+  main {
+    width: 40%;
+    padding: 2em;
+  }
+
+  section {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    main {
+      width: 100%;
     }
-    p {
+
+    section {
+      width: 100%;
     }
-  } */
+  }
 `;
 
 export const Button = styled.button`
   width: 100%;
   background-color: var(--main-color);
-  padding: 1em;
+  padding: 0.7em;
   border: none;
   border-radius: 10px;
 
@@ -78,12 +90,12 @@ export const Button = styled.button`
 
 export const BannerImg = styled.img`
   width: 100%;
-  height: 500px;
+  height: 100%
 
   object-fit: cover;
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     width: 100%;
     height: 100%;
-  }
+  } */
 `;
