@@ -30,8 +30,8 @@ function Search({ properties }) {
           <BsFilterCircle className="filterIcon" />{" "}
           <h2> Search Property by Filter</h2>
         </section>
-
         {searchFilters && <SearchFilter />}
+
         <h2>Properties {router.query.purpose}</h2>
         <section className="MapItems">
           {properties.map((property) => (

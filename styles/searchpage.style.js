@@ -20,7 +20,7 @@ export const Content = styled.div`
   h2 {
     color: var(--darkGrey);
     text-align: start;
-    margin: 1em 1.5em;
+    margin: 1em 1em;
   }
 
   .Noresult p {
@@ -56,7 +56,7 @@ export const Content = styled.div`
   .filterIcon {
     color: var(--main-color);
     font-size: 1.5rem;
-    box-shadow: 4px 15px 18px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 4px 15px 18px 1px rgba(0, 0, 0, 0.3);
   }
 
   @media screen and (max-width: 768px) {
