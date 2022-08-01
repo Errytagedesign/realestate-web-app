@@ -32,13 +32,15 @@ function Property({
       <main>
         <Link href={`/property/${externalID}`} passHref>
           <a>
-            <Content>
+            <Content data-aos="fade-in" data-aos-duration="3000">
               <Image
                 className="cardImg"
                 src={coverPhoto ? coverPhoto.url : defaultPhoto}
                 alt="House Images"
                 width={600}
                 height={300}
+                data-aos="zoom-out"
+                data-aos-duration="2000"
               />
 
               <section className="CardTitle">

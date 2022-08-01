@@ -12,6 +12,7 @@ import { baseUrl, fetchApi } from "../utils/fetchApi";
 
 export default function Home({ propertiesForSale, propertiesForRent }) {
   console.log(propertiesForSale, propertiesForRent);
+
   return (
     <main>
       <section>
