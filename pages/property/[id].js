@@ -15,7 +15,7 @@ import { baseUrl, fetchApi } from "../../utils/fetchApi";
 import ImgSlider from "../../components/Slider/ImgSlider";
 
 // styles
-import { Wrapper, Content } from "./pageDetails.styles";
+import { Wrapper, Content } from "../../components/pageDetails.styles";
 
 function PropertyDetails({
   propertyDetails: {
@@ -88,7 +88,7 @@ function PropertyDetails({
           </h3>
         </article>
 
-        <article className="d-flex flex-column mt-3 border-top col-12">
+        <article className="d-flex flex-column mt-5 border-top col-12">
           {amenities ? <h5> Amenities:</h5> : null}
           <div className=" ">
             {amenities.map((item) =>
