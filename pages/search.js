@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { fetchApi, baseUrl } from "../utils/fetchApi";
 
 // Styles
-import { Wrapper, Content } from "../styles/searchpage.style";
+import { Wrapper, Content } from "../components/searchpage.style";
 
 // Comps
 import SearchFilter from "../components/searchFilter/SearchFilter";
@@ -32,7 +32,7 @@ function Search({ properties }) {
         </section>
         {searchFilters && <SearchFilter />}
 
-        <h2>Properties {router.query.purpose}</h2>
+        <h2 className="ProTitle">Properties {router.query.purpose}</h2>
         <section className="MapItems">
           {properties.map((property) => (
             <section key={property.id} className="EachItems">

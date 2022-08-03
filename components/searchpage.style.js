@@ -17,7 +17,7 @@ export const Content = styled.div`
   align-items: center;
   cursor: pointer;
 
-  h2 {
+  .ProTitle {
     color: var(--darkGrey);
     text-align: start;
     margin: 1em 1em;
