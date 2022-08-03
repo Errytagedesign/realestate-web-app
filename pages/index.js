@@ -21,7 +21,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
           title1="Rental Homes for Everyone "
           desc1="Explore Apartments, Villas, Homes and many more"
           buttonText="Explore More"
-          LinkName=""
+          LinkName="/search?purpose=for-rent"
           ImageUrl="https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4"
         />
         <article className={style.forSale}>
@@ -38,7 +38,7 @@ export default function Home({ propertiesForSale, propertiesForRent }) {
           desc1="Explore from Apartments, land, builder floors,
         villas and more"
           buttonText="Explore More"
-          LinkName=""
+          LinkName="/search?purpose=for-sale"
           ImageUrl="https://psgroup.in/blog/wp-content/uploads/2021/02/photo-1564013799919-ab600027ffc6.jpeg"
         />
 

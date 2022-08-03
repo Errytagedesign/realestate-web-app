@@ -89,4 +89,11 @@ p{
 .btn a {
   font-weight: 600;
   font-size: var(--fontMed);
+  text-decoration: none;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+
 }

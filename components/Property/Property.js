@@ -32,7 +32,7 @@ function Property({
       <main>
         <Link href={`/property/${externalID}`} passHref>
           <a>
-            <Content data-aos="fade-in" data-aos-duration="3000">
+            <Content data-aos="fade-in">
               <Image
                 className="cardImg"
                 src={coverPhoto ? coverPhoto.url : defaultPhoto}
@@ -40,7 +40,6 @@ function Property({
                 width={600}
                 height={300}
                 data-aos="zoom-out"
-                data-aos-duration="2000"
               />
 
               <section className="CardTitle">
@@ -65,7 +64,7 @@ function Property({
                 <FaBed className="HomeIcons" /> |<p>{millify(area)} sqft</p>{" "}
                 <BsFillGridFill className="HomeIcons" />|
               </section>
-              <p className="title">
+              <p className="title mt-4">
                 {title.length > 30 ? `${title.slice(0, 30)}...` : title}{" "}
               </p>
             </Content>

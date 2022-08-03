@@ -17,7 +17,7 @@ import Image from "next/image";
 import Noresult from "../assets/image/noresult.svg";
 
 function Search({ properties }) {
-  console.log(properties);
+  // console.log(properties);
   const [searchFilters, setSearchFilters] = useState(false);
   const router = useRouter();
   return (
@@ -35,11 +35,9 @@ function Search({ properties }) {
         <h2>Properties {router.query.purpose}</h2>
         <section className="MapItems">
           {properties.map((property) => (
-            <>
-              <section className="EachItems">
-                <Property property={property} key={property.id} />
-              </section>
-            </>
+            <section key={property.id} className="EachItems">
+              <Property property={property} key={property.id} />
+            </section>
           ))}
         </section>
         {properties.length === 0 && (

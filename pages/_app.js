@@ -1,9 +1,13 @@
 import { useEffect } from "react";
-import "../styles/globals.css";
 import Head from "next/head";
 import NProgress from "nprogress";
 import Layout from "../components/layout/Layout";
 
+// Styles
+import "bootstrap/dist/css/bootstrap.css";
+import "../styles/globals.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }) {
@@ -13,7 +17,9 @@ function MyApp({ Component, pageProps }) {
   }, [AOS]);
   return (
     <>
-      <Head></Head>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Layout>
         <Component {...pageProps} />
       </Layout>

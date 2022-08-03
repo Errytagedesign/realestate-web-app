@@ -4,9 +4,10 @@ export const Wrapper = styled.div`
   position: relative;
   width: 100%;
   display: flex;
-  background: var(--grad);
+  /* background: var(--grad); */
   align-items: center;
   justify-content: space-around;
+  border-bottom: solid 2px var(--lightGrey);
 
   /* 
   :hover {
@@ -36,6 +37,7 @@ export const Content = styled.div`
     font-size: var(--fontBig);
     cursor: pointer;
     visibility: hidden;
+    color: var(--grad);
   }
 
   @media screen and (max-width: 768px) {
@@ -53,11 +55,11 @@ export const NavBars = styled.div`
   justify-content: space-between;
 
   .navItems {
-    color: #fff;
-    padding: 1em;
-    text-transform: uppercase;
-    font-weight: 600;
+    padding: 0.5em;
+    /* text-transform: uppercase; */
+    font-weight: 500;
     cursor: pointer;
+    color: #000;
   }
   .closeMenu {
     color: #fff;
@@ -83,13 +85,15 @@ export const NavBars = styled.div`
     left: 0;
     /* right: 0; */
     flex-direction: column;
-    background: var(--main-color);
+    background: var(--grad);
     padding: 1.5em;
     transition: 350ms;
-    z-index: 200;
+    z-index: 200000000;
+    .navItems {
+      color: #fff;
+    }
   }
-
-  .navItems {
-    background: var(--gradient);
-  }
+  /* .navItems {
+    background: var(--grad);
+  } */
 `;
