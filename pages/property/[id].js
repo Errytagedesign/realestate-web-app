@@ -15,7 +15,7 @@ import { baseUrl, fetchApi } from "../../utils/fetchApi";
 import ImgSlider from "../../components/Slider/ImgSlider";
 
 // styles
-import { Wrapper, Content } from "./[id].styles";
+import { Wrapper, Content } from "./pageDetails.styles";
 
 function PropertyDetails({
   propertyDetails: {
