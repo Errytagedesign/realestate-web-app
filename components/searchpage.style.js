@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin: 1em auto;
-
+  font-family: "Ubuntu", sans-serif;
   /*width: 100%;
   display: flex;
 
