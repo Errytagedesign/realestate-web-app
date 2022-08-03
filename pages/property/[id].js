@@ -35,7 +35,7 @@ function PropertyDetails({
     photos,
   },
 }) {
-  // console.log(amenities);
+  console.log(amenities);
   return (
     <Wrapper>
       <main className="m-1 m-lg-3 p-1 p-lg-3">
@@ -78,29 +78,24 @@ function PropertyDetails({
           <h5> Type:</h5> <h3 className="text-uppercase">{type} || </h3>
         </article>
 
-        <article className="d-flex flex-row align-items-center justify-content-between">
+        <article className="d-flex flex-row align-items-center ">
           <h5> Purpose:</h5> <h3 className="text-uppercase">{purpose} || </h3>
         </article>
-        <article className="d-flex flex-row align-items-center mb-5">
+        <article className="d-flex flex-row align-items-center">
           <h5> FurnishingStatus:</h5>{" "}
           <h3 className="text-uppercase">
             {furnishingStatus ? furnishingStatus : "None"}{" "}
           </h3>
         </article>
 
-        <article className="d-flex flex-column mt-3 border-top">
-          <h5> Amenities:</h5>
+        <article className="d-flex flex-column mt-3 border-top col-12">
+          {amenities ? <h5> Amenities:</h5> : null}
           <div className=" ">
-            {amenities
-              ? amenities.map((item) =>
-                  item.amenities.map((amenity) => (
-                    <small className="text-justify" key={amenity.text}>
-                      {" "}
-                      | {amenity.text}{" "}
-                    </small>
-                  ))
-                )
-              : "Not available"}
+            {amenities.map((item) =>
+              item.amenities.map((amenity) => (
+                <small key={amenity.text}> {amenity.text} </small>
+              ))
+            )}
           </div>
         </article>
       </section>

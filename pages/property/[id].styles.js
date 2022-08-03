@@ -12,6 +12,18 @@ export const Wrapper = styled.div`
     border: solid var(--grad) 2px;
     border-radius: 5px;
   } */
+
+  small {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; */
+    background var(--darkGrey);
+    padding: .5em;
+    margin: 0 .1em;
+    line-height: 34px;
+  }
+
 `;
 
 export const Content = styled.div`
