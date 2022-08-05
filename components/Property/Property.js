@@ -35,6 +35,8 @@ function Property({
             <Content data-aos="fade-in">
               <Image
                 className="cardImg"
+                placeholder="blur"
+                blurDataURL={coverPhoto.url}
                 src={coverPhoto ? coverPhoto.url : defaultPhoto}
                 alt="House Images"
                 width={600}
