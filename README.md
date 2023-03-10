@@ -14,13 +14,15 @@ This is a Next.js web app that allows you to search for properties, buy or rent 
 
 The app has the following pages:
 
-1. Home: This is the landing page for the app. It displays a search bar where you can search for properties, as well as a list of featured properties.
+1. ### Home:
 
-2. # Search:
+   This is the landing page for the app. It displays a search bar where you can search for properties, as well as a list of featured properties.
+
+2. ### Search:
 
    This page displays a list of properties that match your search criteria. You can filter the list by min price, max price, purpose, frequency, furniture type (furnished or unfurnished), and sort the list by lowest or highest price, newest or oldest, verified, city level score, and number of rooms.
 
-3. # Buy Property:
+3. ### Buy Property:
 
    This page displays a list of properties that are available for sale. You can filter the list by min price, max price, purpose, frequency, furniture type, and sort the list as described above.
 
@@ -28,40 +30,52 @@ The app has the following pages:
 
    This page displays a list of properties that are available for rent. You can filter the list by min price, max price, purpose, frequency, furniture type, and sort the list as described above.
 
-5. # Property Details:
+5. ### Property Details:
    This page displays more details about a specific property. You can access this page by clicking on the name of a property from any of the other pages.
 
 ## Technologies Used
 
 1. Next Js.
 2. [Bootstrap](https://getbootstrap.com).
-3. [REST Countries API](https://restcountries.com/)
+3. [RapidApi-'n'-BayutApi](https://rapidapi.com/apidojo/api/bayut)
 4. [Axios](https://axios-http.com/docs/intro)
 5. [Custom-Hook](https://reactjs.org/docs/hooks-custom.html)
+6. [Nprogress](https://www.npmjs.com/package/nextjs-progressbar)
+7. [Millify](https://github.com/izolate/millify)
+8. [Custom-Hook](https://reactjs.org/docs/hooks-custom.html)
+9. [Styled-Components](https://styled-components.com).
+10. [Slick-carousel](https://react-slick.neostack.com/)
+11. [React-icons](https://react-icons.github.io/react-icons/search)
 
 ## Features
 
-1. Search: You can search for countries by name or partial name. The app will display a list of matching countries, along with their flags, names, and population.
+1. ### Search:
 
-2. Filtering: You can filter the list of countries by region (Africa, Americas, Asia, Europe, Oceania).
+   You can search for countries by name or partial name. The app will display a list of matching countries, along with their flags, names, and population.
 
-3. Read More Page: You can view more details about each country by clicking on its name. The app will display a separate page with information about the country's capital, population, currency, and languages.
+2. ### Filtering:
+
+   You can filter the list of countries by region (Africa, Americas, Asia, Europe, Oceania).
+
+3. ### Read More Page:
+
+   You can view more details about each country by clicking on its name. The app will display a separate page with information about the country's capital, population, currency, and languages.
 
 4. Dark and Light Mode theme
 
 ## Preview
 
-![country-searchapp](Screenshot-1.png)
-![country-searchapp](Screenshot-2.png)
-![country-searchapp](Screenshot-3.png)
-![country-searchapp](Screenshot-4.png)
-![country-searchapp](Screenshot-5.png)
+![realestate](Screenshot-1.png)
+![realestate](Screenshot-2.png)
+![realestate](Screenshot-3.png)
+![realestate](Screenshot-4.png)
+![realestate](Screenshot-5.png)
 
 ## Installation
 
 To run the app locally, follow these steps:
 
-Clone the repository: git clone https://github.com/your-username/country-search-app.git
+Clone the repository: git clone https://github.com/Errytagedesign/realestate-web-app.git
 Install the dependencies: npm install
 Start the app: npm start
 
