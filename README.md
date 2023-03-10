@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Real Estate Web App
 
-## Getting Started
+This is a [Next.js ](https://nextjs.org/) project bootstrapped with create-next-app.
 
-First, run the development server:
+## Live links
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[Realestate-webapp](https://realestate-web-app-errytagedesign.vercel.app/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## App Description
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This is a Next.js web app that allows you to search for properties, buy or rent them, and view more details about each property by clicking on its name.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Pages
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The app has the following pages:
 
-## Learn More
+1. Home: This is the landing page for the app. It displays a search bar where you can search for properties, as well as a list of featured properties.
 
-To learn more about Next.js, take a look at the following resources:
+2. # Search:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   This page displays a list of properties that match your search criteria. You can filter the list by min price, max price, purpose, frequency, furniture type (furnished or unfurnished), and sort the list by lowest or highest price, newest or oldest, verified, city level score, and number of rooms.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. # Buy Property:
 
-## Deploy on Vercel
+   This page displays a list of properties that are available for sale. You can filter the list by min price, max price, purpose, frequency, furniture type, and sort the list as described above.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. # Rent Property:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   This page displays a list of properties that are available for rent. You can filter the list by min price, max price, purpose, frequency, furniture type, and sort the list as described above.
+
+5. # Property Details:
+   This page displays more details about a specific property. You can access this page by clicking on the name of a property from any of the other pages.
+
+## Technologies Used
+
+1. Next Js.
+2. [Bootstrap](https://getbootstrap.com).
+3. [REST Countries API](https://restcountries.com/)
+4. [Axios](https://axios-http.com/docs/intro)
+5. [Custom-Hook](https://reactjs.org/docs/hooks-custom.html)
+
+## Features
+
+1. Search: You can search for countries by name or partial name. The app will display a list of matching countries, along with their flags, names, and population.
+
+2. Filtering: You can filter the list of countries by region (Africa, Americas, Asia, Europe, Oceania).
+
+3. Read More Page: You can view more details about each country by clicking on its name. The app will display a separate page with information about the country's capital, population, currency, and languages.
+
+4. Dark and Light Mode theme
+
+## Preview
+
+![country-searchapp](Screenshot-1.png)
+![country-searchapp](Screenshot-2.png)
+![country-searchapp](Screenshot-3.png)
+![country-searchapp](Screenshot-4.png)
+![country-searchapp](Screenshot-5.png)
+
+## Installation
+
+To run the app locally, follow these steps:
+
+Clone the repository: git clone https://github.com/your-username/country-search-app.git
+Install the dependencies: npm install
+Start the app: npm start
+
+## Contributing
+
+If you find any bugs or issues with the app, feel free to open a new issue on the GitHub repository. If you would like to contribute to the project, you can fork the repository and submit a pull request with your changes.
