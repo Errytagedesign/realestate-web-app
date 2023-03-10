@@ -24,7 +24,7 @@ The app has the following pages:
 
    This page displays a list of properties that are available for sale. You can filter the list by min price, max price, purpose, frequency, furniture type, and sort the list as described above.
 
-4. # Rent Property:
+4. ### Rent Property:
 
    This page displays a list of properties that are available for rent. You can filter the list by min price, max price, purpose, frequency, furniture type, and sort the list as described above.
 
